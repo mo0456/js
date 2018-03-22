@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8">
+  <title>Document</title>  
+  
+ </head>
+ <body>
+	<script type="text/javascript">
+		//随机选取从10到100之间的10个数字，存入一个数组，并排序
+		function getRandom(start,end){ //从10到100中随机取一个数值
+			var choice = end - start;
+			var num = Math.abs(Math.ceil(Math.random()*choice)) + start;
+			return num;
+		}
+
+		var arr = [];
+
+		for(var i=0,len=10; i<len; i++){ //循环10次，总共取十个随机数
+			arr.push(getRandom(10,100));
+		}
+
+		function sortNum(a,b){ //从小到大排序
+			return a - b
+		}
+
+		arr.sort(sortNum); //将排序函数传入sort方法内
+
+		alert(arr);
+	</script>
+ </body>
+</html>
