@@ -1,0 +1,6 @@
+git使用：
+
+1、配置：
+
+git config --global user.name "mo0456" //配置用户名称
+git config --global user.email "303016856@qq.com" //配置用户邮箱
